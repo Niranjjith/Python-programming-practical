@@ -1,5 +1,3 @@
-# Program to demonstrate conditional branches
-
 mark = int(input("Enter your mark: "))
 
 if mark >= 90:
