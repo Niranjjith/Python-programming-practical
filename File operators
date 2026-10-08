@@ -1,0 +1,12 @@
+with open("sample. tx", "w")as file;
+file.write("Hello, his is the first line.n")
+with open("sample.txt, "r'") as file:
+content = file.read(
+print("'Content after writing:'")
+print(content)
+with open("sample.txt", "a") as file:
+file.write("This is the appended line.In")
+with open("sample.txt', "') as file:
+updated_content = file.read()
+print("Content after appending:")
+print(updated _content)
