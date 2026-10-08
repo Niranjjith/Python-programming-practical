@@ -1,0 +1,33 @@
+import tkinter as tk
+from tkinter import messagebox
+
+def submit_form():
+    name = entry_name.get()
+
+    if name.strip():
+        messagebox.showinfo(
+            "Welcome",
+            f"Hello, {name}! This is a dynamic form."
+        )
+    else:
+        messagebox.showwarning(
+            "Input Error",
+            "Please enter your name."
+        )
+
+root = tk.Tk()
+root.title("Interactive Form")
+
+tk.Label(root, text="Enter your name:").pack(pady=10)
+
+entry_name = tk.Entry(root)
+entry_name.pack(pady=5)
+
+submit_btn = tk.Button(
+    root,
+    text="Submit",
+    command=submit_form
+)
+submit_btn.pack(pady=10)
+
+root.mainloop()
